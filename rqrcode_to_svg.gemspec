@@ -7,9 +7,9 @@ Gem::Specification.new do |s|
   s.version     = RqrcodeToSvg::VERSION
   s.authors     = ["Jon Jensen"]
   s.email       = ["jdjensen.public@gmail.com"]
-  s.homepage    = ""
-  s.summary     = %q{TODO: Write a gem summary}
-  s.description = %q{TODO: Write a gem description}
+  s.homepage    = "http://github.com/verisimilitudinous/rqrcode_to_svg"
+  s.summary     = %q{Creates an SVG graphic of a QR Code.}
+  s.description = %q{Creates an SVG graphic of a QR Code. Adds a to_svg method to the RQRCode::QRCode class provided by the 'rqrcode' gem.}
 
   s.rubyforge_project = "rqrcode_to_svg"
 
@@ -21,4 +21,6 @@ Gem::Specification.new do |s|
   # specify any dependencies here; for example:
   # s.add_development_dependency "rspec"
   # s.add_runtime_dependency "rest-client"
+  s.add_development_dependency "rqrcode"
+  s.add_runtime_dependency "rqrcode"
 end
